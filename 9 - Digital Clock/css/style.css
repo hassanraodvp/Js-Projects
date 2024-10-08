@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 3rem;
+}
+.clock h2{
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .5em 0;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 17%;
+    top: 20%;
+    background: linear-gradient(135deg, #4e085f, #255ccc);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 9999;
+}
+.clock::after{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: 15%;
+    bottom: 2%;
+    background: linear-gradient(135deg, #255ccc, #4e085f);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.display{
+    font-size: 1.7em;
+    font-weight: 600;
+    border-radius: .5em;
+    padding: 1em 2em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    background: rgba(235, 0, 255, 0.11);
+    box-shadow: 0px 2px 17px 0px #163577;
+    backdrop-filter: blur(40px);
+}
+.display div{
+    display: inline;
+    text-align: center;
+    font-size: .6em;
+    font-weight: 700;
+}
+.display .min{
+    padding-left: .5em;
+}
+.display .sec{
+    padding-left: 1.29em;
+}
+.display span{
+    padding: .2em;
+}

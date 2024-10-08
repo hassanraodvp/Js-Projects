@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('./img/stary-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;position: relative;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translateY(-20% , 10%);
+    -webkit-transform: translateY(-20% , 10%);
+    -moz-transform: translateY(-20% , 10%);
+    -ms-transform: translateY(-20% , 10%);
+    -o-transform: translateY(-20% , 10%);
+}
+.content h1{
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.content p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 6em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    letter-spacing: 1px;
+}
+.launch-time div span{
+    font-size: 2em;
+    padding-left: .3em;
+}
+#btn{
+    padding: .5em 1em;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffff;
+    margin: 3em 1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#btn:hover{
+    background-color: black ;
+    color: #ffffff;
+}
+.rocket{
+    width: 150px;
+    position: absolute;
+    bottom: 7%;
+    right: 20%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    animation: rocket 4s linear infinite;
+    -webkit-animation: rocket 5s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 7%;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+/* ------------------- POP-UP --------------------- */
+
+.popup{
+    width: 300px;
+    border-radius: 1em;
+    position: absolute;
+    visibility: hidden;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+    padding: 1em 2em;
+    background-color: #fff;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.open-popup{
+    visibility: visible;
+}
+.popup img{
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-top: -1em;
+    margin-bottom: .5em;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.popup h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: 600;
+    padding: .2em 0;
+}
+.popup p{
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: .5em 0;
+    line-height: 2em;
+}
+.popup button{
+    padding: .5em 2em;
+    border-radius: 1em;
+    border: 1px solid #999;
+    background: #111;
+    color: azure;
+    margin: .5em 0;
+    font-weight: 600;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+    .content{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translateY(-10% , 10%);
+        -webkit-transform: translateY(-10% , 10%);
+        -moz-transform: translateY(-10% , 10%);
+        -ms-transform: translateY(-10% , 10%);
+        -o-transform: translateY(-10% , 10%);
+}
+    .content h1{
+        font-size: 3rem;
+    }
+    .content p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 1em;
+    }
+    .launch-time div p{
+        font-size: 4em;
+        font-weight: 600;
+        margin-bottom: .5em;
+        margin-top: .5em;
+        letter-spacing: 1px;
+    }
+    .launch-time div span{
+        font-size: 2em;
+        padding-left: 0;
+    }
+    .rocket{
+        width: 50px;
+        position: absolute;
+        bottom: 7%;
+        right: 20%;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        animation: rocket 4s linear infinite;
+        -webkit-animation: rocket 4s linear infinite;
+    }
+  }

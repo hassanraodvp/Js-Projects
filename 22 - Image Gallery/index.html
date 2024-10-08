@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Image Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="fullImg" id="fullImgBox">
+            <img src="img/1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="imgGallery">
+            <img src="img/1.jpg" onclick="openFullImg(this.src)">
+            <img src="img/2.jpg" onclick="openFullImg(this.src)">
+            <img src="img/3.jpg" onclick="openFullImg(this.src)">
+            <img src="img/4.jpg" onclick="openFullImg(this.src)">
+            <img src="img/5.jpg" onclick="openFullImg(this.src)">
+            <img src="img/6.jpg" onclick="openFullImg(this.src)">
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

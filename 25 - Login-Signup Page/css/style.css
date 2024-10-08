@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149155031.jpg?t=st=1725680116~exp=1725683716~hmac=2a88bcfa809fae16d0aab2b8baf23be4ad2218849ee72c29d7047881e01b5b9e&w=826') ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 430px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+
+.button-container {
+    width: 220px;
+    margin: 1em auto;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: .5em 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input-group {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: .5em 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+.input-field::placeholder{
+    color: #fff;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.check-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-top: 1em;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.submit-btn:hover{
+    background: linear-gradient(to right, #ffad06, #ff105f);
+}
+#register {
+    left: 450px;
+}
+

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    background: linear-gradient(to bottom, #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+    width: 100%;
+    min-height: 100vh;
+    color: azure;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 900;
+}
+.container h1 img{
+    margin-right: .3em;
+}
+.container button{
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: green;
+    margin-top: 5%;
+    font-size: 1.5em;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+.container button img{
+    width: 28px;
+    margin-right: .2em;
+} 
+.input-box{
+    background: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    margin: 20px 0;
+    padding: .5em 1em;
+    outline: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.input-box .dlt-img{
+    position: absolute;
+    bottom: 5%;
+    width: 30px;
+    right: 2%;
+    cursor: pointer;
+}

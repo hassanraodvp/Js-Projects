@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Project - Js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="search">
+                    <input type="text" class="input" id="input" placeholder="Enter city name" spellcheck="false" required>
+                    <button class="btn" id="search"><i class='bx bx-search'></i></button>
+                </div>
+                <div class="weather">
+                    <img src="./img/rain.png" alt="weather-icon" class="rain" id="icon">
+                    <h5 id="cloud"></h5>
+                    <h2 id="temp" class="temp">32°C</h2>
+                    <h3 id="city" class="city">New York</h3>
+                    <h4 id="country"></h4>
+                    <div class="details">
+                        <div class="col">
+                            <img src="./img/humidity.png">
+                            <div>
+                                <p id="humidity" class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="./img/wind.png">
+                            <div>
+                                <p id="wind" class="wind">10 km/h</p>
+                                <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

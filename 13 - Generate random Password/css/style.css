@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    margin: 5% 10% 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 700px;
+}
+.container h1{
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.container h1 span{
+    font-size: 3em;
+    text-decoration: underline;
+    letter-spacing: normal;
+}
+.display{
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background: #999;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    padding: .5em 1.5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.display input{
+    padding: .5em 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    background: transparent;
+    letter-spacing: .60px;
+    color: aliceblue;
+    font-weight: 600;
+}
+.display img{
+    width: 40px;
+    cursor: pointer;
+}
+.container button{
+    display: flex;
+    padding: .5em 1em;
+    font-size: 2em;
+    align-items: center;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #999;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.container button img{
+    width: 40px;
+    margin-right: .1em;
+}

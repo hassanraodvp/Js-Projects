@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Coming Soon Landing Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content" id="hide">
+                <h1>Coming Soon</h1>
+                <p>We're working on something awesome. Stay tuned!</p>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Min's</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Sec's</span>
+                </div>
+            </div>
+                <button id="btn" onclick="openPopup()">Read More</button>
+            </div>
+            <img src="./img/noto--rocket.png" class="rocket">
+        </div>
+        <div class="popup" id="popup">
+            <img src="./img/patience.png" alt="tick">
+            <h2>Stay Tuned!</h2>
+            <p>Your patience will be awarded you. <br> Thank You!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

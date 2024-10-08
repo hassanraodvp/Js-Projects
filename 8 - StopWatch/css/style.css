@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: aliceblue;
+    background: linear-gradient(90deg, rgb(13, 153, 192) 0%, rgb(2, 40, 121) 35%, rgb(11, 202, 176) 100%);
+}
+.container h1{
+    font-size: 3rem;
+    padding: .5em 0;
+}
+.stopwatch{
+    border-radius: 1em;
+    border: 1px solid #fff;
+    padding: 1em 5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.stopwatch h2{
+    font-size: 4.5em;
+    letter-spacing: 5px;
+}
+.stopwatch img{
+    width: 50px;
+    margin: 2em 1em;
+    cursor: pointer;
+}

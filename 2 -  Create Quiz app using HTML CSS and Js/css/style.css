@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url('./img/Back-Grad.png');
+}
+.app{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.app h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: .5em;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+}
+.quiz h3{
+    color: #001e4d;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+#answer-buttons .btn{
+    width: 100%;
+    margin: .7em 0;
+    padding: .7em .5em;
+    font-weight: 500;
+    text-align: left;
+    border-radius: .5em;
+    border: 1px solid #333;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 1s;
+}
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background-color: green;
+    padding: .5em 1em;
+    border: none;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 2em;
+    margin: 1em auto 0;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notification on Buttons</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/e96be78cda.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="buttons">
+            <button id="submit" onclick="showToast(successMsg)">Submit</button>
+            <button id="error" onclick="showToast(errorMsg)">Error</button>
+            <button id="invalid" onclick="showToast(invalidMsg)">Invalid</button>
+        </div>
+        <div id="toastBox">
+
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

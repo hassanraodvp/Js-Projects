@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.calculator h1{
+    font-size: 3.5em;
+    padding: 0 0 1em 0;
+}
+.calculator h1 .js{
+    color: #e6f90e;
+    font-size: 3em;
+}
+.calculator .input-box input{
+    padding: .5em 1em;
+    border: none;
+    font-size: 2em;
+    font-weight: 600;
+    width: 50%;
+    outline: none;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.calculator .input-box .cal{
+    padding: .5em 1em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    margin-left: .5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    cursor: pointer;
+    background-color: #05d30c;
+    font-weight: 600;
+    color: rgb(10, 11, 11);
+}
+.calculator .input-box .cal:hover{
+    background-color: red;
+    color: #333;
+}
+#result{
+    width: 100%;
+    height: 3em;
+    background-color: #fff;
+    border-radius: 1em;
+    border: none;
+    padding: .7em 1em;
+    outline: none;
+    margin: 2em 0;
+    font-size: 2em;
+    font-weight: 600;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    .calculator h1{
+        padding-top: 2em;
+
+        font-size: 1.5em;
+  }
+  .calculator h1 .js{
+    font-size: 2em;
+  }
+  .calculator .input-box input{
+    font-size: 1.5em;
+    width: 40%;
+}
+.calculator .input-box .cal{
+    font-size: 1.5em;
+}
+#result{
+    width: 75%;
+    height: 3em;
+    background-color: #fff;
+    padding: .7em 1em;
+    margin: 2em 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
+}
+@media only screen and (max-width: 400px){
+    .calculator .input-box input{
+        font-size: 1em;
+        width: 30%;
+    }
+    .calculator .input-box .cal{
+        font-size: 1em;
+    }
+}

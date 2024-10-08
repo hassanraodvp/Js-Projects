@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+h2{
+    font-size: 3em;
+    padding: 1em 0;
+}
+h2 span{
+    color: blue;
+    position: relative;
+}
+h2 span::after{
+    content: '';
+    background-color: blueviolet;
+    width: 110px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    right: 15%;
+}
+textarea{
+    width: 500px;
+    outline: none;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    resize: none;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+textarea::placeholder{
+    letter-spacing: .5px;
+    color: #000;
+}
+.row{
+    display: flex;
+    margin: 1em 0;
+}
+.row .select{
+    width: 410px;
+    margin: 0 1em;
+    padding: 1em 1em;
+    border: none;
+    border-radius: .5em;
+    outline: none;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+.row .btn{
+    padding: .5em 1.5em;
+    color: #ffff;
+    cursor: pointer;
+    border: none;
+    margin-right: .4em;
+    border-radius: 1em;
+    outline: none;
+    background-color: green;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+} 
+@media only screen and (max-width: 550px){
+    h2{
+        font-size: 2em;
+        margin-top: -5em;
+    }
+    h2 span::after{
+        content: '';
+        width: 67px;
+    }
+    textarea{
+        width: 400px;
+    }
+    .row .select{
+        width: 310px;
+        margin: 0 1em;
+        padding: 1em 1em;
+    }
+}
+@media only screen and (max-width: 430px){
+    h2{
+        font-size: 1.5em;
+        margin-top: -5em;
+        word-spacing: .5px;
+    }
+    h2 span::after{
+        content: '';
+        width: 55px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .row .select{
+        width: 210px;
+        margin: 0 1em;
+        padding: 1em 1em;
+    }
+}
